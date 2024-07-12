@@ -1,4 +1,6 @@
-@import "../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "main/navigation";
+@import "main/header";
+@import "main/information";
+@import "main/gallery";
+@import "main/reviews";
+@import "main/feedback";
