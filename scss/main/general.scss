@@ -1,0 +1,53 @@
+$title-font-size: 32px;
+
+body
+{
+  background-color: #000000;
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.page-block
+{
+  &>.wrapper
+  {
+    padding: 100px 0;
+    margin:  0 auto;
+    width: 1100px;
+  }
+}
+
+%title-separator
+{
+  content: "";
+
+  display: block;
+  width: 540px;
+  height: 20px;
+
+  background: url("images/sprites/long separator.png");
+
+  position: absolute;
+  left: calc(50% - 270px);
+}
+
+.page-title
+{
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  font-size: $title-font-size;
+
+  &::before
+  {
+    @extend %title-separator;
+    bottom: 100%;
+  }
+
+  &::after
+  {
+    @extend %title-separator;
+    top: 100%;
+  }
+}
