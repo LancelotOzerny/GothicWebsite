@@ -1,4 +1,11 @@
 $title-font-size: 32px;
+$gothic-font: Prata, 'Times New Roman';
+
+@font-face {
+  src: url("fonts/prata/Prata-Regular.ttf");
+  font-family: Prata;
+  font-weight: 400;
+};
 
 body
 {
@@ -34,10 +41,12 @@ body
 
 .page-title
 {
+  margin: 0;
   text-align: center;
-  text-transform: uppercase;
   position: relative;
+  text-transform: uppercase;
   font-size: $title-font-size;
+  font-family: $gothic-font;
 
   &::before
   {
