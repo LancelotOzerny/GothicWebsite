@@ -1,0 +1,41 @@
+.navigation
+{
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  background-color: #000000;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  z-index: 999;
+
+  box-shadow: 0 0 2px #F6B684;
+}
+
+.navbar-horizontal
+{
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-link
+{
+  color: inherit;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: $gothic-font;
+  letter-spacing: 1px;
+
+  &:hover
+  {
+    color: #F6B684;
+  }
+}
